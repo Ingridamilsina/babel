@@ -37,7 +37,7 @@ python --version
 #                                   TEST                                       #
 #==============================================================================#
 
-startLocalRegistry "$root"/verdaccio-config.yml
+startLocalRegistry "$root"/"$VERDACCIO_CONFIG".yml
 yarn install
 yarn dedupe '@babel/*'
 
